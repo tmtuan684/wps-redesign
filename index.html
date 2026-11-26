@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Programming Studio Redesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band top">
+  <div class="wrap">
+    <h1>Web Programming Studio: a learning journey, not a race to the project</h1>
+    <p>I'd like to redesign COSC3060 and its Canvas shell so students engage, practise and create more in studio mode. The main problem I want to solve: many students lean on AI tools to finish the group project without mastering the fundamentals.</p>
+    <ul class="goals">
+      <li>Fundamentals before the project</li><li>Practice for the AI era</li><li>Fairer group work</li><li>Schedule matches assessment</li><li>Stronger self-regulated learning</li>
+    </ul>
+    <div class="meta">Tuan · RMIT University Vietnam, SGS · ideas for our Canvas meeting, November 2026</div>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Every topic walks the same four steps</h2>
+    <p>The journey follows Bloom's taxonomy. Every topic reaches at least <b>apply</b>; the higher levels come through the group project. Weekly topics are named by what students can do, such as "Structure a page" or "Build a server", with two topics a week, one per session.</p>
+    <div class="fig" id="fig" role="img" aria-label="A path climbing from Learn to Rehearse to Apply to Extend, rising through Bloom's levels"><svg id="sv"></svg></div>
+    <div class="stops" id="stops"></div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap grid2">
+    <div>
+      <h2>What one session looks like</h2>
+      <p>Each 3-hour session follows the same rhythm, so students always know what comes next and can plan their own study around it.</p>
+      <div class="hours">
+        <div><strong>4 h</strong><span>pre-class preparation a week</span></div>
+        <div><strong>6 h</strong><span>in class, two 3-hour sessions</span></div>
+        <div><strong>6 h</strong><span>self-regulated learning after class</span></div>
+      </div>
+    </div>
+    <ol class="steps" id="steps"></ol>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid2">
+    <div>
+      <h2>How I picture it in Canvas</h2>
+      <p>One module per week, and inside it the same set of items for each session. Students should be able to see at a glance where they are on the journey.</p>
+      <ul class="wants" id="wants"></ul>
+    </div>
+    <div>
+      <div class="cv" aria-label="Mock Canvas module">
+        <div class="cvbar"><i></i><i></i><i></i><span>COSC3060 · Modules</span></div>
+        <div id="mods"></div>
+      </div>
+      <div class="note">Example layout to discuss, not the final topic list. Week 1 Session 1 (semantic HTML) is the pilot I'm building first.</div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap grid2">
+    <div>
+      <h2>Assessment changes</h2>
+      <p>The session-opening quizzes use source code and are graded on completion. Their 5% comes out of Assessment 1, which drops to 15%. The individual full-stack lab test stays at 40%, as it is.</p>
+    </div>
+    <div class="bars" id="bars"></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>What I'd like to work out with you</h2>
+    <ul class="qs" id="qs"></ul>
+  </div>
+</section>
+
+<footer class="band"><div class="wrap">Course format: 11 weeks including the holiday, demo and exam weeks. Teaching materials use RMIT branding.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
