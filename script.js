@@ -32,9 +32,6 @@ const mods=[
 ];
 document.getElementById('mods').innerHTML=mods.map(m=>`<div class="mod"><h4>${m.h}<small>${m.s}</small></h4>${m.items.map(i=>`<div class="item"><div class="ic">${i[0]}</div><div>${i[1]}</div><div class="tag">${i[2]}</div></div>`).join('')}</div>`).join('');
 
-const bars=[["Individual lab test",40],["Assessment 1",15],["Session-opening quizzes",5]];
-document.getElementById('bars').innerHTML=bars.map(b=>`<div class="bar"><div>${b[0]}</div><div class="track"><div style="width:${b[1]/40*100}%"></div></div><div class="v">${b[1]}%</div></div>`).join('')+'<div class="note">Only the components that change, or stay fixed, are shown here.</div>';
-
 const qs=[
  ["Module structure","Should modules be organised by week, or by capability topic?"],
  ["Hosting the learning labs","What's the best way to embed or link standalone HTML pages so they work well in Canvas?"],

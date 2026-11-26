@@ -2,7 +2,7 @@
    IDEA: a course map, the path a student walks from fundamentals to their own project
    PICTURE: a four-stop journey path climbing Bloom's levels, then a mock Canvas week module
    COLOUR and TYPE: RMIT red #E4002B dominant, deep ink support, white ground; Cinzel titles, IBM Plex Sans body, JetBrains Mono for code bits
-   LAYOUT: title band, journey picture, session anatomy, Canvas mock, assessment, questions for the meeting */
+   LAYOUT: title band, journey picture, session anatomy, Canvas mock, questions for the meeting */
 :root{color-scheme:light dark;
 --bg:light-dark(#ffffff,#121214);--ink:light-dark(#1a1a1f,#ecebee);--soft:light-dark(#5b5b66,#a6a5ae);
 --red:#E4002B;--redsoft:light-dark(#fdecef,#3a1219);--line:light-dark(#e4e3e8,#2c2c33);
@@ -56,12 +56,6 @@ code,.mono{font-family:"JetBrains Mono",monospace;font-size:14px}
 .wants li{padding:12px 0;border-bottom:1px solid var(--line)}
 .wants b{display:block}
 .wants span{color:var(--soft);font-size:15.5px}
-/* assessment */
-.bars{display:grid;gap:12px;margin-top:8px}
-.bar{display:grid;grid-template-columns:200px minmax(0,1fr) 56px;gap:12px;align-items:center}
-.track{height:14px;background:var(--panel);border-radius:7px;overflow:hidden}
-.track div{height:100%;background:var(--red);border-radius:7px}
-.bar .v{text-align:right;font-weight:600}
 /* questions */
 .qs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 36px;padding:0;margin:0;list-style:none}
 .qs li{border-left:3px solid var(--red);padding:4px 0 4px 14px}
@@ -70,5 +64,5 @@ code,.mono{font-family:"JetBrains Mono",monospace;font-size:14px}
 footer{font-size:13.5px;color:var(--soft);border-top:1px solid var(--line)}
 @media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.stops,.qs{grid-template-columns:minmax(0,1fr)}.hours{grid-template-columns:minmax(0,1fr)}
-.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.bar{grid-template-columns:minmax(0,1fr) 48px}.bar .track{grid-column:1/-1;grid-row:2}.fig{min-height:300px}}
+.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.fig{min-height:300px}}
 @media(prefers-reduced-motion:no-preference){#path{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.6s ease-out .2s forwards}@keyframes draw{to{stroke-dashoffset:0}}}
